@@ -1,5 +1,8 @@
 # chelfit
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24211564.svg)](https://doi.org/10.5281/zenodo.24211564)
+
+
 **A matched benchmark of chelate–vector coupling in targeted conjugates.**
 
 Data, quantum-chemical geometries and analysis code for the article
@@ -87,3 +90,7 @@ measurement authors listed in `data/affinity_raw.csv`.
 ## Licence
 
 CC BY 4.0 — see `LICENSE`.
+
+## Citation
+
+Archived release: <https://doi.org/10.5281/zenodo.24211564>

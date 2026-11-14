@@ -3,6 +3,7 @@ title: "chelfit: a matched benchmark of chelate–vector coupling in targeted co
 message: "If you use this dataset or code, please cite both the software/dataset and the article."
 type: dataset
 license: CC-BY-4.0
+doi: 10.5281/zenodo.24211564
 authors:
   - family-names: Kim
     given-names: Jeongyun
