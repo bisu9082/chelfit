@@ -1,0 +1,124 @@
+\documentclass[11pt]{letter}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{charter}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% letter 클래스에는 \paragraph 가 없다 — 소제목용으로 정의
+\makeatletter
+\providecommand{\paragraph}{}
+\renewcommand{\paragraph}[1]{\par\medskip\noindent\textbf{#1}\par\nobreak\smallskip}
+\makeatother
+
+\signature{Ku Kang, Ph.D. \\
+CBRN Defense Research Institute \\
+Ministry of National Defense, Republic of Korea \\
+E-mail: bisu9082@gmail.com}
+
+\address{Ku Kang \\
+CBRN Defense Research Institute \\
+Seoul 06796, Republic of Korea}
+
+\begin{document}
+
+\begin{letter}{The Editor \\
+\textit{Chemical Science} \\
+The Royal Society of Chemistry \\
+Burlington House, London W1J 0BA, UK}
+
+\opening{Dear Editor,}
+
+We submit for your consideration a manuscript entitled
+\textbf{``A metal chelate's effect on molecular recognition is not a property of
+the chelate''} for publication in \textit{Chemical Science} as an Edge Article.
+
+\paragraph{The assumption we tested, and why it matters beyond one field.}
+Coordination chemistry is routinely appended to molecular recognition: a metal
+complex is attached to a molecule that binds a biological target, and the two
+jobs---holding the metal and still binding---are treated as separable. That
+separability is assumed rather than tested, and it is load-bearing: chelators
+are selected from published comparisons and from heuristic metal--chelator
+matching tables. We audited the assumption against the literature's own data and
+found it does not hold. The effect of the chelate on recognition is real and
+large, but it is not encoded in the chelate.
+
+\paragraph{What the audit shows.}
+From ten studies we assembled 106 matched affinity measurements in which a
+single targeting molecule was conjugated to two or more chelators and assayed
+under one protocol, giving 32 matched sets across five target families. Within a
+set, chelator identity alone shifts affinity by a median factor of 2.6 and by up
+to 25.3, while propagated measurement error accounts for only 11.1\% of the
+within-set variance. None of that signal transfers: under
+leave-one-target-family-out validation an empirical chelator ranking
+($R^2 = -0.250$), classical physicochemical descriptors ($R^2 = -0.219$) and
+solvated GFN2-xTB descriptors computed on 27 structurally verified complexes
+($R^2 = -0.340$) all perform worse than assuming no effect, none orders a
+held-out set better than chance, and a within-set permutation test places every
+model inside the no-information null. What the data do contain is interaction:
+chelator identity crossed with target family explains $R^2 = 0.498$ against
+$R^2 = 0.133$ for the chelator alone.
+
+\paragraph{Three features we expect your referees to test, and our answers.}
+\textit{(i) ``The quantum chemistry was not good enough.''} We anticipated this
+and closed it. Complexation energies referenced to the bare ion are dominated by
+Coulombic neutralisation---they span $-691$ to $-2257$\,kcal\,mol$^{-1}$ and
+track the metal's formal charge at $r = -0.914$---so we replaced them with a
+ligand-exchange energy in which the ion term cancels exactly
+($r = -0.199$, $p = 0.320$), recomputed every complex with ALPB implicit
+solvation and wider conformer sampling, and verified coordination mode against
+the known mode for all 27 metal complexes. Improving the physics raised
+in-sample explanatory power ($R^2 = 0.070 \rightarrow 0.139$) and \emph{lowered}
+held-out performance ($R^2 = -0.227 \rightarrow -0.340$). The negative result
+survives its own strongest objection.
+\textit{(ii) ``The sample is small.''} We bound rather than excuse this: an
+injection analysis shows the design would detect a transferable twofold effect
+about three times in four, and is blind below $\sim$1.4-fold.
+\textit{(iii) ``It is a lipophilicity artefact.''} Every log$D_{7.4}$ or
+log$P$ value reported alongside the affinity data was transcribed and tested; it
+explains 7.4\% of the within-set difference and is not significant.
+
+\paragraph{Why \textit{Chemical Science}.}
+The claim is a chemical one of general interest: a property of an isolated
+complex cannot encode a contact the complex never makes, and we show this
+quantitatively rather than asserting it. The work also belongs to a line your
+journal has recently championed---the auditing of widely used computational
+evaluations, as in Schuh \textit{et al.}, \textit{Chem. Sci.}, 2026, DOI:
+10.1039/d6sc01799a, which exposed hidden leakage and redundancy in biomolecular
+benchmarks. Our audit shares that methodology---leakage-resistant splits,
+controlled injection experiments, permutation nulls---and applies it to a
+chemical design rule rather than to a benchmark suite. Radiometal--chelator
+chemistry is likewise within your remit, as in Rudd \textit{et al.},
+\textit{Chem. Sci.}, 2025, DOI: 10.1039/d4sc06969b. Every number and figure is
+reproducible from the deposited dataset, geometries and code, which we release
+as an open benchmark so the result can be overturned if it is wrong.
+
+\paragraph{Suggested reviewers.}
+We respectfully suggest referees spanning the three axes of the manuscript:
+\begin{enumerate}
+\item A coordination or radiometal chemist with experience of bifunctional
+  chelator design and metal--chelate stability.
+\item A computational chemist experienced in semi-empirical quantum chemistry
+  (xTB family), implicit solvation and conformer sampling of metal complexes.
+\item A researcher in chemistry-aware machine learning with expertise in
+  validation design, data leakage and benchmark auditing.
+\item A medicinal chemist or chemical biologist working on receptor-targeted
+  conjugates and binding assays.
+\item A statistician with experience of matched/paired designs and
+  meta-analysis of heterogeneous assay data.
+\end{enumerate}
+Specific names will be supplied through the editorial system. Because the
+dataset is drawn from published work by a small number of groups, we ask that
+referees be selected from outside the laboratories whose data we re-analyse, and
+we identify no other exclusions.
+
+\paragraph{Conflicts and prior submission.}
+The work has not been published or submitted elsewhere. There are no financial
+or other conflicts to declare.
+
+We thank you for your consideration and look forward to your editorial decision.
+
+\closing{Sincerely yours,}
+
+\end{letter}
+\end{document}

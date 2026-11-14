@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "chelfit: a matched benchmark of chelate–vector coupling in targeted conjugates"
+message: "If you use this dataset or code, please cite both the software/dataset and the article."
+type: dataset
+license: CC-BY-4.0
+authors:
+  - family-names: Kim
+    given-names: Jeongyun
+    affiliation: "CBRN Defense Research Institute, Ministry of National Defense"
+  - family-names: Yoo
+    given-names: Jin
+    affiliation: "CBRN Defense Research Institute, Ministry of National Defense"
+  - family-names: Kang
+    given-names: Ku
+    affiliation: "CBRN Defense Research Institute, Ministry of National Defense"
+    email: bisu9082@gmail.com
+  - family-names: Lee
+    given-names: Dongyeol
+    affiliation: "Korea Military Academy"
+preferred-citation:
+  type: article
+  title: "A metal chelate's effect on molecular recognition is not a property of the chelate"
+  authors:
+    - family-names: Kim
+      given-names: Jeongyun
+    - family-names: Yoo
+      given-names: Jin
+    - family-names: Kang
+      given-names: Ku
+    - family-names: Lee
+      given-names: Dongyeol
+  journal: "Chemical Science"
+  year: 2026

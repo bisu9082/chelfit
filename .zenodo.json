@@ -1,0 +1,20 @@
+{
+  "title": "chelfit: a matched benchmark of chelate–vector coupling in targeted conjugates",
+  "description": "<p>Data, quantum-chemical geometries and analysis code for the article <em>A metal chelate's effect on molecular recognition is not a property of the chelate</em>.</p><p>Contains 106 affinity measurements hand-transcribed from ten open-access studies in which a single targeting molecule was conjugated to two or more chelators and assayed under one protocol (32 matched sets, five target families), optimised Cartesian geometries of 32 metal–chelate complexes computed with GFN2-xTB (gas phase and ALPB/water), the derived descriptor tables, and the complete analysis pipeline. Every affinity value carries its source DOI; no value was parsed automatically, interpolated, estimated or generated.</p>",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": [
+    "bifunctional chelator", "radiometal", "molecular recognition",
+    "binding affinity", "GFN2-xTB", "benchmark", "model generalisation",
+    "data leakage", "coordination chemistry", "matched design"
+  ],
+  "creators": [
+    {"name": "Kim, Jeongyun",  "affiliation": "CBRN Defense Research Institute, Ministry of National Defense, Seoul, Republic of Korea"},
+    {"name": "Yoo, Jin",       "affiliation": "CBRN Defense Research Institute, Ministry of National Defense, Seoul, Republic of Korea"},
+    {"name": "Kang, Ku",       "affiliation": "CBRN Defense Research Institute, Ministry of National Defense, Seoul, Republic of Korea"},
+    {"name": "Lee, Dongyeol",  "affiliation": "Korea Military Academy, Seoul, Republic of Korea"}
+  ],
+  "notes": "Jeongyun Kim and Jin Yoo contributed equally. Correspondence: Ku Kang and Dongyeol Lee."
+}

@@ -1,0 +1,98 @@
+%%============================================================
+\section{Introduction}
+%%============================================================
+
+Coordination chemistry is routinely bolted onto molecular recognition. A metal complex is appended to a molecule that recognises a biological target, and the resulting conjugate is expected to do two jobs at once: hold the metal, and still bind. The design logic that follows treats these jobs as separable---the complex is chosen for its coordination chemistry, and the recognition element for its affinity, as though the first were invisible to the second.
+
+Throughout this article we use \textbf{chelate--vector coupling} for the quantity under study: the change in a conjugate's affinity for its target that follows from changing the chelate alone. This is distinct from \emph{the chelate effect} of classical coordination chemistry, which denotes the enhanced thermodynamic stability of a complex formed by a multidentate rather than monodentate ligand. The two are independent---every complex considered here is a stable chelate in the classical sense, and what varies is what that chelate does to recognition.
+
+Targeted radiopharmaceuticals are where this logic is applied most systematically, and therefore where it can be tested. Radiometal-labelled peptides and protein scaffolds pair a targeting vector with a bifunctional chelator that holds the radiometal. The chelator is usually chosen for radiochemistry---labelling yield, kinetics, and in-vivo complex stability---on the implicit assumption that it is an inert payload holder that does not disturb targeting. Price and Orvig's widely used review codifies that selection logic.\cite{PriceOrvig2014}
+
+That assumption is false, and the field knows it. Fani and co-workers titled their somatostatin study ``The Chelate Makes the Difference'' after finding that swapping the chelator changed receptor affinity substantially.\cite{Fani2011} The same observation has been repeated across targets: macrocyclic chelators altered the targeting properties of a \ce{^68Ga}-labelled GRPR antagonist;\cite{Varasteh2015} different metal--chelate conjugates of pentixafor changed CXCR4 affinity by more than an order of magnitude;\cite{Poschenrieder2016a} chelator choice changed imaging contrast for the bombesin analogue RM26\cite{Mitran2016} and for cobalt-labelled GRPR antagonists.\cite{Mitran2019}
+
+Every one of these is a one-off empirical comparison: build three or four variants, measure, pick the best. What no study has asked is whether this body of work is cumulative---\textbf{is chelate--vector coupling a property of the chelate?} If a chelator ranking obtained on one vector transfers to another, then a few careful studies could spare the field a great deal of synthesis, and the effect is something a chemist can reason about from the complex. If it does not transfer, then the effect belongs not to the complex but to the pairing, each new construct must be screened from scratch, and published rankings are evidence about nothing but the vector they were measured on.
+
+Prediction of metal--ligand stability constants by machine learning is by now a mature area, but thermodynamic stability is not the quantity at issue: the constructs being compared all form stable complexes, and the differences appear in recognition. We therefore audited transfer directly. We assembled matched sets from the literature, modelled the within-set affinity differences, and asked whether any description of the complex predicts them in a target family the model has never seen. Because a null result from coarse descriptors would be uninformative, we also computed explicit quantum-chemical descriptors on structurally verified, solvated geometries of each metal--chelate complex, so that the audit tests the class of complex-level description rather than one careless choice of it.
+
+%%============================================================
+\section{Results and discussion}
+%%============================================================
+
+\subsection{The effect under audit is large}
+
+Changing only the chelator, with vector, metal and assay fixed, shifts affinity by a median factor of \textbf{2.61}; six of 32 sets exceed fivefold and the largest is \textbf{25.3-fold} (pentixafor with \ce{Cu}: NOTA \SI{46.1}{\nano\Molar} versus DOTAGA \SI{1165}{\nano\Molar}) (Fig.~\ref{fig:1}a). This is not a marginal effect.
+
+\subsection{It is not an artefact of measurement error}
+
+Propagating the reported standard deviations to the log scale gives a median single-measurement error of 0.065 log$_{10}$ units, or 0.092 for a within-set contrast. Measurement error therefore accounts for \textbf{11.1\%} of the within-set variance and genuine signal for \textbf{88.9\%} (Fig.~\ref{fig:1}b). Any descriptor that captured the effect could in principle reach $R^2 = 0.889$.
+
+\subsection{Its direction reverses from one target to the next}
+
+Across 18 matched sets containing both DOTA and NODAGA, DOTA was the stronger binder in 10 and NODAGA in 8 (Fig.~\ref{fig:1}c). For DOTA versus NOTA the split is 8 of 16. The mean contrasts are small and their confidence intervals cross zero: DOTA $-$ NODAGA, $\Delta$log$_{10} = +0.139$, 95\% CI $[-0.042, +0.325]$, $d_z = 0.337$, Wilcoxon $p = 0.265$; DOTA $-$ NOTA, $\Delta$log$_{10} = +0.012$, 95\% CI $[-0.131, +0.167]$, $p = 0.938$. Large per-set effects coexist with no reproducible ordering.
+
+\subsection{No description of the complex survives transfer, quantum chemistry included}
+
+Under leave-one-target-family-out (LOPO) validation on the 82 rows with quantum-chemical coverage (Fig.~\ref{fig:2}a, Table~\ref{tab:lopo}), every model is worse than assuming no effect, and the combined model is worst---the signature of fitting noise. Increasing ridge regularisation improves the quantum-chemical model only by shrinking it toward the zero predictor ($R^2 = -0.453$, $-0.340$, $-0.215$, $-0.111$ at $\alpha = 0.1$, 1, 10, 100), never past it.
+
+\begin{table}[h]
+\small
+\caption{Leave-one-target-family-out performance ($n = 82$). Confidence intervals are from 10\,000 bootstrap resamples.}
+\label{tab:lopo}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrr}
+\toprule
+Model & LOPO $R^2$ & 95\% CI \\
+\midrule
+No effect (predict 0)      & $0.000$  & $[-0.064, 0.000]$ \\
+Universal chelator ranking & $-0.250$ & $[-0.433, -0.131]$ \\
+Classical descriptors      & $-0.219$ & $[-0.391, -0.102]$ \\
+GFN2-xTB/ALPB descriptors  & $-0.340$ & $[-0.677, -0.105]$ \\
+Classical $+$ quantum      & $-0.480$ & $[-0.915, -0.226]$ \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+Improving the physics does not help; it hurts. Moving from a gas-phase to a solvated treatment with a charge-artifact-free exchange energy and wider conformer sampling \emph{raised} the in-sample explanatory power of the quantum-chemical descriptors from $R^2 = 0.070$ to $R^2 = 0.139$, and \emph{lowered} their held-out performance from $R^2 = -0.227$ to $R^2 = -0.340$. The additional chemical information is real and it is context-specific: it improves the fit where the data are and makes the extrapolation worse.
+
+A within-set permutation test confirms that this is indistinguishable from chance (Fig.~\ref{fig:2}b): the observed solvated result ($R^2 = -0.340$) sits inside the null distribution obtained by shuffling chelator labels within sets (null mean $-0.206$, 95\% interval $[-0.449, -0.008]$, $p = 0.877$), as does the classical result ($p = 0.765$).
+
+Lipophilicity does not account for the effect either. Across the 29 within-set pairs for which a log$D_{7.4}$ or log$P$ value was reported alongside the affinity, the difference in lipophilicity explains 7.4\% of the difference in affinity and the association is not significant ($r = +0.272$, $p = 0.153$, bootstrap 95\% CI $[-0.146, +0.580]$); the absolute values are uncorrelated ($r = -0.040$, $p = 0.838$).
+
+Transfer fails at every level of generalisation, not only across families (Fig.~\ref{fig:3}b): held-out chelator $R^2 = -0.004$, held-out vector $-0.081$, held-out paper $-0.081$, held-out target family $-0.122$, held-out metal $-0.211$.
+
+\subsection{The descriptors are chemically meaningful, and an apparent signal still fails}
+
+A null result invites the objection that the descriptors were simply poor. They were not. In the space of the twelve descriptors the 32 complexes organise chemically: complexes of the same chelator sit closer together than complexes of different chelators (Mann--Whitney $p = 0.031$), and the first two principal components, carrying 44\% and 26\% of the variance, separate the macrocyclic cavity sizes and the metal-free ligands (Fig.~\ref{fig:4}a,b). The ligand-exchange energies order chemically as well: NOTA is destabilised relative to DOTA for every metal ($+14$ to $+21$\,kcal\,mol$^{-1}$) and DOTAGA stabilised ($-6$ to $-36$\,kcal\,mol$^{-1}$), with the larger ions favouring the more donor-rich chelators.
+
+That organisation even produces an apparent relationship with the data. Pooling all 95 within-set chelator pairs, the distance between two complexes in descriptor space correlates with the size of the affinity difference between them ($r = +0.312$, $p = 0.002$, bootstrap 95\% CI $[+0.052, +0.523]$; Spearman $\rho = +0.211$, $p = 0.040$)---larger chemical difference, larger perturbation (Fig.~\ref{fig:4}c). Taken at face value this would support a useful rule.
+
+It does not survive validation (Fig.~\ref{fig:4}d). Predicting the magnitude of the effect in a held-out target family gives $R^2 = -0.156$ from the descriptor distance and $R^2 = -0.371$ from the full difference vector. Predicting its direction is at chance (AUC $= 0.483$, accuracy 0.495), and the pooled correlation with the signed difference is absent to begin with ($r = +0.085$, $p = 0.415$). The apparent signal is a pooled artefact of exactly the kind this audit was designed to detect.
+
+\subsection{What the audit would have caught}
+
+Injecting an effect that is by construction a linear function of the descriptors---hence perfectly transferable---gives a detection curve (200 random descriptor directions per magnitude; detection defined as LOPO $R^2 > 0$). The design detects a transferable twofold effect about three times in four (74\%), reaches 80\% only near fourfold, and has essentially no power below 1.4-fold. The observed within-set effects have a median magnitude of 1.50-fold and reach 5.5-fold, so effects of the relevant size exist in the data---they are simply not transferable. A transferable component of twofold or more is excluded with roughly 75\% confidence; a component smaller than ${\sim}1.4$-fold is beyond what this dataset can resolve.
+
+The same conclusion follows from a metric that does not depend on $R^2$ at all. Asked merely to put the chelators of a held-out set in the right order, every model performs at chance: the universal ranking orders 8 of 18 sets correctly (mean $\rho = -0.055$, 95\% CI $[-0.361, +0.251]$), classical descriptors 9 of 18 ($\rho = -0.066$), quantum-chemical descriptors 8 of 18 ($\rho = +0.001$) and their union 9 of 18 ($\rho = -0.005$).
+
+\subsection{The structure is real, and it lives in the pairing}
+
+The failure is not an absence of structure (Fig.~\ref{fig:3}a). Chelator identity alone explains $R^2 = 0.133$ of within-set variance; chelator interacted with target family explains $R^2 = 0.498$---nearly four times as much. By contrast the quantum-chemical descriptors explain only $R^2 = 0.139$ of the within-set variance \emph{in sample}. The information needed to predict the effect is present in the chelator\,$\times$\,vector combination and absent from any property of the isolated complex that we computed.
+
+\subsection{Why a property of the complex cannot carry it}
+
+A metal chelate appended to a targeting molecule is not a spectator. It sits at the conjugation site, usually the vector's N-terminus, close enough to the recognition interface that its steric bulk, charge distribution and rigidity enter the binding event. What it costs there is set by what the receptor presents at that position---and SSTR2, GRPR, CXCR4, PSMA and an engineered scaffold present different things. The quantity that governs the effect is therefore a contact, and a contact belongs to a pair. No property of the isolated complex, however carefully computed, can encode a partner it never meets.
+
+Read this way the audit does not report a failure of description; it locates the missing information. Charge, denticity, cavity fit, exchange energy, dipole, metal partial charge and coordination geometry are all genuine properties of the complex, and all of them are silent about the pairing. The quantum-chemical arm matters precisely because it rules out the easy explanation: the descriptors were not crude, the geometries were solvated and verified against known coordination modes, and they still carry nothing transferable.
+
+The practical consequence is direct. A published statement that chelator X outperforms chelator Y is evidence about the vector it was measured on and should not be carried to a new construct; our data show the ordering is as likely to reverse as to hold. Chelator screening cannot be replaced by literature-based selection or by computational pre-screening with complex-level descriptors, and should be treated as a required experimental step for each new vector. Reporting a full matched series rather than only the winning variant therefore has unusual value, since only matched series support this kind of analysis.
+
+\subsection{Limitations}
+
+The dataset is small---95 matched-set observations in 32 sets across five target families---and LOPO with five folds is a demanding test. We have quantified rather than merely acknowledged this: the injection analysis resolves transferable effects of twofold and above about three times in four and is blind below roughly 1.4-fold, and because the injected effect was linear in the descriptors, the easiest case to learn, that floor is optimistic. The five target families span peptides and engineered protein scaffolds, which differ in how far the chelate sits from the binding interface; the direction reversals nonetheless occur within the peptide families alone. Endpoints were pooled across IC$_{50}$, $K_\text{i}$ and $K_\text{D}$; within-set centring makes this defensible---no set mixes endpoints---but it assumes chelate--vector coupling acts comparably on all three. Three of the ten studies come from two laboratories. Thirteen values involving AAZTA5, benzyl-substituted chelators and the [\ce{AlF}]$^{2+}$ unit lacked quantum-chemical descriptors and were excluded from those models while retained in the descriptive analyses.
+
+%%============================================================
+\section{Conclusions}
+%%============================================================
+
+We audited a load-bearing assumption of conjugate design: that the effect a metal chelate has on molecular recognition is a property of the chelate. Across ten studies and 106 matched affinity measurements the effect is unambiguous---chelator choice alone moves affinity by a median factor of 2.6 and by up to 25-fold, with measurement error accounting for only 11\% of the within-set variance. It is also unambiguously non-transferable. No empirical ranking, no classical physicochemical descriptor set, and no solvated GFN2-xTB descriptor set computed on structurally verified geometries predicts the effect in a held-out target family; all do worse than assuming no effect, none is separable from a within-set permutation null, and none orders held-out chelators better than chance. An injection analysis bounds the claim: a transferable component of twofold or more would have been caught three times in four. What the data do contain is interaction---chelator identity crossed with target family explains 50\% of within-set variance against 13\% for the chelator alone.
+
+Chelate--vector coupling is therefore not a property of the chelate but of the pairing, and it must be measured in each pairing. For practice this reverses the usual inference: a published chelator comparison is evidence about the vector it was measured on. For description it says where to look next---not at better properties of the complex, but at the complex in contact with its target.
