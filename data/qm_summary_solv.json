@@ -48,6 +48,9 @@
    "n": 82
   }
  },
+ "insample_qm_solv_r2": 0.13897479311615402,
+ "insample_qm_gas_r2": 0.08619452932424221,
+ "interaction_r2": 0.5287740563252209,
  "qm_features": [
   "dE_exch_eV",
   "q_metal",

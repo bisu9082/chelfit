@@ -71,10 +71,22 @@ for k,ok_ in [("B2 범용순위","B2 킬레이터범용"),("B3 고전","B3 고�
 
 print("\n"+"="*78); print("in-sample 적합 상한"); print("="*78)
 m=make_pipeline(StandardScaler(),Ridge(alpha=1.0)).fit(X_qm,y)
-print(f"QM(용매화) in-sample R² = {r2_score(y,m.predict(X_qm)):.3f}  (기체상 0.070)")
+IN_SOLV=float(r2_score(y,m.predict(X_qm)))
+# 동일 행에서 기체상 기술자의 in-sample 값도 함께 계산 (문헌값 복사 금지)
+_qg=pd.read_csv("qm_descriptors.csv",encoding="utf-8-sig").merge(ex,on=["chelator","metal"],how="left")
+_qg["dE_exch_eV"]=_qg["dE_exch_eV"].fillna(0.0)
+_dg=df.merge(_qg[["chelator","metal"]+QMF],on=["chelator","metal"],how="inner")
+_c=_dg.groupby("set_id")["chelator"].nunique(); _dg=_dg[_dg.set_id.isin(_c[_c>=2].index)].copy()
+_dg["y"]=_dg["logv"]-_dg.groupby("set_id")["logv"].transform("mean")
+for _cc in ["d_MN_mean","d_MO_mean"]: _dg[_cc]=_dg[_cc].fillna(_dg[_cc].median())
+_mg=make_pipeline(StandardScaler(),Ridge(alpha=1.0)).fit(_dg[QMF].values.astype(float),_dg["y"].values)
+IN_GAS=float(r2_score(_dg["y"].values,_mg.predict(_dg[QMF].values.astype(float))))
+print(f"QM(용매화) in-sample R² = {IN_SOLV:.3f}  (기체상 {IN_GAS:.3f})")
 inter=d.groupby(["chelator","vector_family"])["y"].transform("mean")
-print(f"킬레이터x계열 상호작용 R² = {1-((d.y-inter)**2).sum()/((d.y-d.y.mean())**2).sum():.3f}")
+INTER=float(1-((d.y-inter)**2).sum()/((d.y-d.y.mean())**2).sum())
+print(f"킬레이터x계열 상호작용 R² = {INTER:.3f}")
 json.dump({"n_rows":int(len(d)),"n_sets":int(d.set_id.nunique()),"models":R,
+           "insample_qm_solv_r2":IN_SOLV,"insample_qm_gas_r2":IN_GAS,"interaction_r2":INTER,
            "qm_features":QMF,"solvation":"ALPB/water"},
           open("qm_summary_solv.json","w"),indent=1,ensure_ascii=False)
 d.to_csv("merged_qm_solv.csv",index=False,encoding="utf-8-sig")

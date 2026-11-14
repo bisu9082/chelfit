@@ -1,0 +1,1987 @@
+{
+ "ok": [
+  {
+   "key": "PriceOrvig2014",
+   "doi": "10.1039/c3cs60304k",
+   "journal": "Chem. Soc. Rev.",
+   "year": 2014,
+   "volume": "43",
+   "page": "260-290",
+   "title": "Matching chelators to radiometals for radiopharmaceuticals",
+   "authors": [
+    {
+     "family": "Price",
+     "given": "Eric W."
+    },
+    {
+     "family": "Orvig",
+     "given": "Chris"
+    }
+   ]
+  },
+  {
+   "key": "Fani2011",
+   "doi": "10.2967/jnumed.111.087999",
+   "journal": "J Nucl Med",
+   "year": 2011,
+   "volume": "52",
+   "page": "1110-1118",
+   "title": "PET of Somatostatin Receptor–Positive Tumors Using <sup>64</sup>Cu- and <sup>68</sup>Ga-Somatostatin Antagonists: The Chelate Makes the Difference",
+   "authors": [
+    {
+     "family": "Fani",
+     "given": "Melpomeni"
+    },
+    {
+     "family": "Del Pozzo",
+     "given": "Luigi"
+    },
+    {
+     "family": "Abiraj",
+     "given": "Keelara"
+    },
+    {
+     "family": "Mansi",
+     "given": "Rosalba"
+    },
+    {
+     "family": "Tamma",
+     "given": "Maria Luisa"
+    },
+    {
+     "family": "Cescato",
+     "given": "Renzo"
+    },
+    {
+     "family": "Waser",
+     "given": "Beatrice"
+    },
+    {
+     "family": "Weber",
+     "given": "Wolfgang A."
+    },
+    {
+     "family": "Reubi",
+     "given": "Jean Claude"
+    },
+    {
+     "family": "Maecke",
+     "given": "Helmut R."
+    }
+   ]
+  },
+  {
+   "key": "Varasteh2015",
+   "doi": "10.1016/j.nucmedbio.2014.12.009",
+   "journal": "Nuclear Medicine and Biology",
+   "year": 2015,
+   "volume": "42",
+   "page": "446-454",
+   "title": "The effect of macrocyclic chelators on the targeting properties of the 68Ga-labeled gastrin releasing peptide receptor antagonist PEG2-RM26",
+   "authors": [
+    {
+     "family": "Varasteh",
+     "given": "Zohreh"
+    },
+    {
+     "family": "Mitran",
+     "given": "Bogdan"
+    },
+    {
+     "family": "Rosenström",
+     "given": "Ulrika"
+    },
+    {
+     "family": "Velikyan",
+     "given": "Irina"
+    },
+    {
+     "family": "Rosestedt",
+     "given": "Maria"
+    },
+    {
+     "family": "Lindeberg",
+     "given": "Gunnar"
+    },
+    {
+     "family": "Sörensen",
+     "given": "Jens"
+    },
+    {
+     "family": "Larhed",
+     "given": "Mats"
+    },
+    {
+     "family": "Tolmachev",
+     "given": "Vladimir"
+    },
+    {
+     "family": "Orlova",
+     "given": "Anna"
+    }
+   ]
+  },
+  {
+   "key": "Poschenrieder2016a",
+   "doi": "10.1186/s13550-016-0193-8",
+   "journal": "EJNMMI Res",
+   "year": 2016,
+   "volume": "6",
+   "page": "36",
+   "title": "The influence of different metal-chelate conjugates of pentixafor on the CXCR4 affinity",
+   "authors": [
+    {
+     "family": "Poschenrieder",
+     "given": "Andreas"
+    },
+    {
+     "family": "Schottelius",
+     "given": "Margret"
+    },
+    {
+     "family": "Schwaiger",
+     "given": "Markus"
+    },
+    {
+     "family": "Kessler",
+     "given": "Horst"
+    },
+    {
+     "family": "Wester",
+     "given": "Hans-Jürgen"
+    }
+   ]
+  },
+  {
+   "key": "Mitran2016",
+   "doi": "10.3892/ijo.2016.3429",
+   "journal": "International Journal of Oncology",
+   "year": 2016,
+   "volume": "48",
+   "page": "2124-2134",
+   "title": "Selection of optimal chelator improves the contrast of GRPR imaging using bombesin analogue RM26",
+   "authors": [
+    {
+     "family": "MITRAN",
+     "given": "BOGDAN"
+    },
+    {
+     "family": "VARASTEH",
+     "given": "ZOHREH"
+    },
+    {
+     "family": "SELVARAJU",
+     "given": "RAM KUMAR"
+    },
+    {
+     "family": "LINDEBERG",
+     "given": "GUNNAR"
+    },
+    {
+     "family": "SÖRENSEN",
+     "given": "JENS"
+    },
+    {
+     "family": "LARHED",
+     "given": "MATS"
+    },
+    {
+     "family": "TOLMACHEV",
+     "given": "VLADIMIR"
+    },
+    {
+     "family": "ROSENSTRÖM",
+     "given": "ULRIKA"
+    },
+    {
+     "family": "ORLOVA",
+     "given": "ANNA"
+    }
+   ]
+  },
+  {
+   "key": "Mitran2019",
+   "doi": "10.1038/s41598-019-52914-y",
+   "journal": "Sci Rep",
+   "year": 2019,
+   "volume": "9",
+   "page": "17086",
+   "title": "Selection of an optimal macrocyclic chelator improves the imaging of prostate cancer using cobalt-labeled GRPR antagonist RM26",
+   "authors": [
+    {
+     "family": "Mitran",
+     "given": "Bogdan"
+    },
+    {
+     "family": "Thisgaard",
+     "given": "Helge"
+    },
+    {
+     "family": "Rinne",
+     "given": "Sara"
+    },
+    {
+     "family": "Dam",
+     "given": "Johan Hygum"
+    },
+    {
+     "family": "Azami",
+     "given": "Frishta"
+    },
+    {
+     "family": "Tolmachev",
+     "given": "Vladimir"
+    },
+    {
+     "family": "Orlova",
+     "given": "Anna"
+    },
+    {
+     "family": "Rosenström",
+     "given": "Ulrika"
+    }
+   ]
+  },
+  {
+   "key": "Poschenrieder2016b",
+   "doi": "10.1186/s13550-016-0227-2",
+   "journal": "EJNMMI Res",
+   "year": 2016,
+   "volume": "6",
+   "page": "70",
+   "title": "Preclinical evaluation of [68Ga]NOTA-pentixafor for PET imaging of CXCR4 expression in vivo — a comparison to [68Ga]pentixafor",
+   "authors": [
+    {
+     "family": "Poschenrieder",
+     "given": "Andreas"
+    },
+    {
+     "family": "Schottelius",
+     "given": "Margret"
+    },
+    {
+     "family": "Schwaiger",
+     "given": "Markus"
+    },
+    {
+     "family": "Wester",
+     "given": "Hans-Jürgen"
+    }
+   ]
+  },
+  {
+   "key": "Poschenrieder2017",
+   "doi": "10.1186/s41181-016-0020-6",
+   "journal": "EJNMMI radiopharm. chem.",
+   "year": 2017,
+   "volume": "2",
+   "page": "2",
+   "title": "[64Cu]NOTA-pentixather enables high resolution PET imaging of CXCR4 expression in a preclinical lymphoma model",
+   "authors": [
+    {
+     "family": "Poschenrieder",
+     "given": "Andreas"
+    },
+    {
+     "family": "Schottelius",
+     "given": "Margret"
+    },
+    {
+     "family": "Osl",
+     "given": "Theresa"
+    },
+    {
+     "family": "Schwaiger",
+     "given": "Markus"
+    },
+    {
+     "family": "Wester",
+     "given": "Hans-Jürgen"
+    }
+   ]
+  },
+  {
+   "key": "Fischer2025",
+   "doi": "10.1186/s13550-025-01241-7",
+   "journal": "EJNMMI Res",
+   "year": 2025,
+   "volume": "15",
+   "page": "114",
+   "title": "Studies on the impact of modifications at the Gln-Trp site in RM2-based GRPR ligands",
+   "authors": [
+    {
+     "family": "Fischer",
+     "given": "Sebastian"
+    },
+    {
+     "family": "Koller",
+     "given": "Lena"
+    },
+    {
+     "family": "Dominelli",
+     "given": "Sandra"
+    },
+    {
+     "family": "Beck",
+     "given": "Roswitha"
+    },
+    {
+     "family": "Wester",
+     "given": "Hans-Jürgen"
+    },
+    {
+     "family": "Günther",
+     "given": "Thomas"
+    }
+   ]
+  },
+  {
+   "key": "Weineisen2014",
+   "doi": "10.1186/s13550-014-0063-1",
+   "journal": "EJNMMI Res",
+   "year": 2014,
+   "volume": "4",
+   "page": "63",
+   "title": "Synthesis and preclinical evaluation of DOTAGA-conjugated PSMA ligands for functional imaging and endoradiotherapy of prostate cancer",
+   "authors": [
+    {
+     "family": "Weineisen",
+     "given": "Martina"
+    },
+    {
+     "family": "Simecek",
+     "given": "Jakub"
+    },
+    {
+     "family": "Schottelius",
+     "given": "Margret"
+    },
+    {
+     "family": "Schwaiger",
+     "given": "Markus"
+    },
+    {
+     "family": "Wester",
+     "given": "Hans-Jürgen"
+    }
+   ]
+  },
+  {
+   "key": "Sinnes2020",
+   "doi": "10.1186/s41181-020-00107-8",
+   "journal": "EJNMMI radiopharm. chem.",
+   "year": 2020,
+   "volume": "5",
+   "page": "28",
+   "title": "68Ga, 44Sc and 177Lu-labeled AAZTA5-PSMA-617: synthesis, radiolabeling, stability and cell binding compared to DOTA-PSMA-617 analogues",
+   "authors": [
+    {
+     "family": "Sinnes",
+     "given": "Jean-Philippe"
+    },
+    {
+     "family": "Bauder-Wüst",
+     "given": "Ulrike"
+    },
+    {
+     "family": "Schäfer",
+     "given": "Martin"
+    },
+    {
+     "family": "Moon",
+     "given": "Euy Sung"
+    },
+    {
+     "family": "Kopka",
+     "given": "Klaus"
+    },
+    {
+     "family": "Rösch",
+     "given": "Frank"
+    }
+   ]
+  },
+  {
+   "key": "Basaco2024a",
+   "doi": "10.2967/jnumed.123.267126",
+   "journal": "J Nucl Med",
+   "year": 2024,
+   "volume": "65",
+   "page": "1427-1434",
+   "title": "<sup>61</sup>Cu-PSMA–Targeted PET for Prostate Cancer: From Radiotracer Development to First-in-Human Imaging",
+   "authors": [
+    {
+     "family": "Basaco Bernabeu",
+     "given": "Tais"
+    },
+    {
+     "family": "Mansi",
+     "given": "Rosalba"
+    },
+    {
+     "family": "Del Pozzo",
+     "given": "Luigi"
+    },
+    {
+     "family": "Zanger",
+     "given": "Sandra"
+    },
+    {
+     "family": "Gaonkar",
+     "given": "Raghuvir H."
+    },
+    {
+     "family": "McDougall",
+     "given": "Lisa"
+    },
+    {
+     "family": "De Rose",
+     "given": "Francesco"
+    },
+    {
+     "family": "Jaafar-Thiel",
+     "given": "Leila"
+    },
+    {
+     "family": "Herz",
+     "given": "Michael"
+    },
+    {
+     "family": "Eiber",
+     "given": "Matthias"
+    },
+    {
+     "family": "Ulaner",
+     "given": "Gary A."
+    },
+    {
+     "family": "Weber",
+     "given": "Wolfgang A."
+    },
+    {
+     "family": "Fani",
+     "given": "Melpomeni"
+    }
+   ]
+  },
+  {
+   "key": "Basaco2024b",
+   "doi": "10.3389/fnume.2024.1481343",
+   "journal": "Front. Nucl. Med.",
+   "year": 2024,
+   "volume": "4",
+   "page": "1481343",
+   "title": "Copper-61 is an advantageous alternative to gallium-68 for PET imaging of somatostatin receptor-expressing tumors: a head-to-head comparative preclinical study",
+   "authors": [
+    {
+     "family": "Basaco Bernabeu",
+     "given": "Tais"
+    },
+    {
+     "family": "Mansi",
+     "given": "Rosalba"
+    },
+    {
+     "family": "Del Pozzo",
+     "given": "Luigi"
+    },
+    {
+     "family": "Gaonkar",
+     "given": "Raghuvir Haridas"
+    },
+    {
+     "family": "McDougall",
+     "given": "Lisa"
+    },
+    {
+     "family": "Johayem",
+     "given": "Anass"
+    },
+    {
+     "family": "Blagoev",
+     "given": "Milen"
+    },
+    {
+     "family": "De Rose",
+     "given": "Francesco"
+    },
+    {
+     "family": "Jaafar-Thiel",
+     "given": "Leila"
+    },
+    {
+     "family": "Fani",
+     "given": "Melpomeni"
+    }
+   ]
+  },
+  {
+   "key": "Rinne2019",
+   "doi": "10.1038/s41598-018-36827-w",
+   "journal": "Sci Rep",
+   "year": 2019,
+   "volume": "9",
+   "page": "655",
+   "title": "Optimization of HER3 expression imaging using affibody molecules: Influence of chelator for labeling with indium-111",
+   "authors": [
+    {
+     "family": "Rinne",
+     "given": "Sara S."
+    },
+    {
+     "family": "Leitao",
+     "given": "Charles Dahlsson"
+    },
+    {
+     "family": "Mitran",
+     "given": "Bogdan"
+    },
+    {
+     "family": "Bass",
+     "given": "Tarek Z."
+    },
+    {
+     "family": "Andersson",
+     "given": "Ken G."
+    },
+    {
+     "family": "Tolmachev",
+     "given": "Vladimir"
+    },
+    {
+     "family": "Ståhl",
+     "given": "Stefan"
+    },
+    {
+     "family": "Löfblom",
+     "given": "John"
+    },
+    {
+     "family": "Orlova",
+     "given": "Anna"
+    }
+   ]
+  },
+  {
+   "key": "Rinne2020",
+   "doi": "10.3390/ijms21061972",
+   "journal": "IJMS",
+   "year": 2020,
+   "volume": "21",
+   "page": "1972",
+   "title": "Benefit of Later-Time-Point PET Imaging of HER3 Expression Using Optimized Radiocobalt-Labeled Affibody Molecules",
+   "authors": [
+    {
+     "family": "Rinne",
+     "given": "Sara S."
+    },
+    {
+     "family": "Dahlsson Leitao",
+     "given": "Charles"
+    },
+    {
+     "family": "Saleh-nihad",
+     "given": "Zahra"
+    },
+    {
+     "family": "Mitran",
+     "given": "Bogdan"
+    },
+    {
+     "family": "Tolmachev",
+     "given": "Vladimir"
+    },
+    {
+     "family": "Ståhl",
+     "given": "Stefan"
+    },
+    {
+     "family": "Löfblom",
+     "given": "John"
+    },
+    {
+     "family": "Orlova",
+     "given": "Anna"
+    }
+   ]
+  },
+  {
+   "key": "Kim2026ChelatorDFT",
+   "doi": "10.1021/acs.molpharmaceut.5c01955",
+   "journal": "Mol. Pharmaceutics",
+   "year": 2026,
+   "volume": "23",
+   "page": "2779-2791",
+   "title": "Rational Selection of Chelators for Theranostic Radionuclides: Insights from Ab Initio Computational Modeling",
+   "authors": [
+    {
+     "family": "Kim",
+     "given": "Jeongyun"
+    },
+    {
+     "family": "Kang",
+     "given": "Ku"
+    },
+    {
+     "family": "Shin",
+     "given": "Kihyun"
+    },
+    {
+     "family": "Schultz",
+     "given": "Michael K."
+    },
+    {
+     "family": "Lee",
+     "given": "Won Bo"
+    },
+    {
+     "family": "Lee",
+     "given": "Dongyoul"
+    }
+   ]
+  },
+  {
+   "key": "Kim2026PbSSTR2",
+   "doi": "10.1002/advs.78419",
+   "journal": "Advanced Science",
+   "year": 2026,
+   "volume": null,
+   "page": "e78419",
+   "title": "Comparative Evaluation of Chelator‐Conjugated Peptides for Lead‐Labeled SSTR2‐Targeted Theranostics: Integrated Computational Modeling and Preclinical Validation",
+   "authors": [
+    {
+     "family": "Kim",
+     "given": "Jeongyun"
+    },
+    {
+     "family": "Han",
+     "given": "Na Yeon"
+    },
+    {
+     "family": "Muzammal",
+     "given": "Ayman"
+    },
+    {
+     "family": "Ahn",
+     "given": "Jae Hun"
+    },
+    {
+     "family": "Im",
+     "given": "Changkeun"
+    },
+    {
+     "family": "Kim",
+     "given": "Sujin"
+    },
+    {
+     "family": "Eom",
+     "given": "Sairan"
+    },
+    {
+     "family": "Kang",
+     "given": "Choong Mo"
+    },
+    {
+     "family": "Kang",
+     "given": "Ku"
+    },
+    {
+     "family": "Lee",
+     "given": "Yong Jin"
+    },
+    {
+     "family": "Lee",
+     "given": "Kyo Chul"
+    },
+    {
+     "family": "K. Schultz",
+     "given": "Michael"
+    },
+    {
+     "family": "Lee",
+     "given": "Dongyoul"
+    }
+   ]
+  },
+  {
+   "key": "Kim2026TAS2R",
+   "doi": "10.1021/acs.jcim.6c02473",
+   "journal": "Journal of Chemical Information\nand Modeling",
+   "year": 2026,
+   "volume": "66",
+   "page": "13570-13585",
+   "title": "Benchmarking TAS2R\nSubtype-Selectivity Prediction\nunder Scaffold-Aware Evaluation: A Controlled Analysis of Receptor\nRepresentations",
+   "authors": [
+    {
+     "family": "Kim",
+     "given": "Jeoungyun"
+    },
+    {
+     "family": "Kang",
+     "given": "Ku"
+    },
+    {
+     "family": "Yoo",
+     "given": "Jin"
+    }
+   ]
+  },
+  {
+   "key": "Kang2026Docking",
+   "doi": "10.1021/acsomega.6c08355",
+   "journal": "ACS Omega",
+   "year": 2026,
+   "volume": "11",
+   "page": "62050-62059",
+   "title": "Benchmarking Affinity-Based\nDocking for Irreversible\nAcetylcholinesterase Inhibitors: A Physics-Informed Reactivity Framework\nfor Stereoselective Potency Prioritization",
+   "authors": [
+    {
+     "family": "Kim",
+     "given": "Jeongyun"
+    },
+    {
+     "family": "Yoo",
+     "given": "Jin"
+    },
+    {
+     "family": "Lee",
+     "given": "Doo-Hee"
+    },
+    {
+     "family": "Kang",
+     "given": "Ku"
+    }
+   ]
+  },
+  {
+   "key": "Kang2026GasBench",
+   "doi": "10.3390/molecules31111884",
+   "journal": "Molecules",
+   "year": 2026,
+   "volume": "31",
+   "page": "1884",
+   "title": "Drift-Robust Lightweight Deep Learning on Open Gas Sensor Benchmarks: A Reproducible Architecture Study with CBRN Applicability Mapping",
+   "authors": [
+    {
+     "family": "Kim",
+     "given": "Soohwan"
+    },
+    {
+     "family": "Shin",
+     "given": "Myeongsik"
+    },
+    {
+     "family": "Kang",
+     "given": "Ku"
+    },
+    {
+     "family": "Lee",
+     "given": "Doo-Hee"
+    },
+    {
+     "family": "Churchill",
+     "given": "David G."
+    },
+    {
+     "family": "Jang",
+     "given": "Yoon Jeong"
+    }
+   ]
+  },
+  {
+   "key": "Kang2025QSAR",
+   "doi": "10.1016/j.comtox.2025.100363",
+   "journal": "Computational Toxicology",
+   "year": 2025,
+   "volume": "35",
+   "page": "100363",
+   "title": "Hybrid QSAR modeling of LD50 in organophosphorus nerve agents: a mechanistic approach using DFT and molecular docking",
+   "authors": [
+    {
+     "family": "Jang",
+     "given": "Youngchan"
+    },
+    {
+     "family": "Kim",
+     "given": "Jeongyun"
+    },
+    {
+     "family": "Lee",
+     "given": "Doo-Hee"
+    },
+    {
+     "family": "Yoo",
+     "given": "Jin"
+    },
+    {
+     "family": "Park",
+     "given": "Jeongwan"
+    },
+    {
+     "family": "Kang",
+     "given": "Ku"
+    }
+   ]
+  },
+  {
+   "key": "Poschenrieder2020",
+   "doi": "10.7150/thno.45537",
+   "journal": "Theranostics",
+   "year": 2020,
+   "volume": "10",
+   "page": "8264-8280",
+   "title": "A new class of PentixaFor- and PentixaTher-based theranostic agents with enhanced CXCR4-targeting efficiency",
+   "authors": [
+    {
+     "family": "Osl",
+     "given": "Theresa"
+    },
+    {
+     "family": "Schmidt",
+     "given": "Alexander"
+    },
+    {
+     "family": "Schwaiger",
+     "given": "Markus"
+    },
+    {
+     "family": "Schottelius",
+     "given": "Margret"
+    },
+    {
+     "family": "Wester",
+     "given": "Hans-Jürgen"
+    }
+   ]
+  },
+  {
+   "key": "Abouzayed2019",
+   "doi": "10.1002/ijc.32401",
+   "journal": "Intl Journal of Cancer",
+   "year": 2019,
+   "volume": "145",
+   "page": "3347-3358",
+   "title": "Trastuzumab cotreatment improves survival of mice with PC‐3 prostate cancer xenografts treated with the GRPR antagonist\n                    <sup>177</sup>\n                    Lu‐DOTAGA‐PEG\n                    <sub>2</sub>\n                    ‐RM26",
+   "authors": [
+    {
+     "family": "Mitran",
+     "given": "Bogdan"
+    },
+    {
+     "family": "Rinne",
+     "given": "Sara S."
+    },
+    {
+     "family": "Konijnenberg",
+     "given": "Mark W."
+    },
+    {
+     "family": "Maina",
+     "given": "Theodosia"
+    },
+    {
+     "family": "Nock",
+     "given": "Berthold A."
+    },
+    {
+     "family": "Altai",
+     "given": "Mohamed"
+    },
+    {
+     "family": "Vorobyeva",
+     "given": "Anzhelika"
+    },
+    {
+     "family": "Larhed",
+     "given": "Mats"
+    },
+    {
+     "family": "Tolmachev",
+     "given": "Vladimir"
+    },
+    {
+     "family": "de Jong",
+     "given": "Marion"
+    },
+    {
+     "family": "Rosenström",
+     "given": "Ulrika"
+    },
+    {
+     "family": "Orlova",
+     "given": "Anna"
+    }
+   ]
+  },
+  {
+   "key": "Guenther2022",
+   "doi": "10.2967/jnumed.121.263323",
+   "journal": "J Nucl Med",
+   "year": 2022,
+   "volume": "63",
+   "page": "1364-1370",
+   "title": "Substitution of l-Tryptophan by <b>α</b>-Methyl-l-Tryptophan in <sup>177</sup>Lu-RM2 Results in <sup>177</sup>Lu-AMTG, a High-Affinity Gastrin-Releasing Peptide Receptor Ligand with Improved In Vivo Stability",
+   "authors": [
+    {
+     "family": "Günther",
+     "given": "Thomas"
+    },
+    {
+     "family": "Deiser",
+     "given": "Sandra"
+    },
+    {
+     "family": "Felber",
+     "given": "Veronika"
+    },
+    {
+     "family": "Beck",
+     "given": "Roswitha"
+    },
+    {
+     "family": "Wester",
+     "given": "Hans-Jürgen"
+    }
+   ]
+  },
+  {
+   "key": "Abouzayed2023",
+   "doi": "10.1186/s13550-023-01005-1",
+   "journal": "EJNMMI Res",
+   "year": 2023,
+   "volume": "13",
+   "page": "56",
+   "title": "The effects of novel macrocyclic chelates on the targeting properties of the 68Ga-labeled Gastrin releasing peptide receptor antagonist RM2",
+   "authors": [
+    {
+     "family": "Wang",
+     "given": "Yinwen"
+    },
+    {
+     "family": "Yuan",
+     "given": "Hongmei"
+    },
+    {
+     "family": "Tang",
+     "given": "Sufan"
+    },
+    {
+     "family": "Liu",
+     "given": "Yang"
+    },
+    {
+     "family": "Cai",
+     "given": "Ping"
+    },
+    {
+     "family": "Liu",
+     "given": "Nan"
+    },
+    {
+     "family": "Chen",
+     "given": "Yue"
+    },
+    {
+     "family": "Zhou",
+     "given": "Zhijun"
+    }
+   ]
+  },
+  {
+   "key": "Bodei2025",
+   "doi": "10.1186/s41181-025-00402-2",
+   "journal": "EJNMMI radiopharm. chem.",
+   "year": 2025,
+   "volume": "10",
+   "page": "74",
+   "title": "Improving GRPR-targeting peptides for radiotheranostics application: insights from chelator modifications and α-methyl-L tryptophan substitution",
+   "authors": [
+    {
+     "family": "Obeid",
+     "given": "Karim"
+    },
+    {
+     "family": "Bezverkhniaia",
+     "given": "Ekaterina"
+    },
+    {
+     "family": "Tolmachev",
+     "given": "Vladimir"
+    },
+    {
+     "family": "Orlova",
+     "given": "Anna"
+    },
+    {
+     "family": "Kanellopoulos",
+     "given": "Panagiotis"
+    }
+   ]
+  },
+  {
+   "key": "Stallons2022",
+   "doi": "10.2967/jnumed.122.264707",
+   "journal": "J Nucl Med",
+   "year": 2022,
+   "volume": "64",
+   "page": "549-554",
+   "title": "<sup>225</sup>Ac-MACROPATATE: A Novel α-Particle Peptide Receptor Radionuclide Therapy for Neuroendocrine Tumors",
+   "authors": [
+    {
+     "family": "King",
+     "given": "A. Paden"
+    },
+    {
+     "family": "Gutsche",
+     "given": "Nicholas T."
+    },
+    {
+     "family": "Raju",
+     "given": "Natarajan"
+    },
+    {
+     "family": "Fayn",
+     "given": "Stanley"
+    },
+    {
+     "family": "Baidoo",
+     "given": "Kwamena E."
+    },
+    {
+     "family": "Bell",
+     "given": "Meghan M."
+    },
+    {
+     "family": "Olkowski",
+     "given": "Colleen S."
+    },
+    {
+     "family": "Swenson",
+     "given": "Rolf E."
+    },
+    {
+     "family": "Lin",
+     "given": "Frank I."
+    },
+    {
+     "family": "Sadowski",
+     "given": "Samira M."
+    },
+    {
+     "family": "Adler",
+     "given": "Stephen S."
+    },
+    {
+     "family": "Thiele",
+     "given": "Nikki A."
+    },
+    {
+     "family": "Wilson",
+     "given": "Justin J."
+    },
+    {
+     "family": "Choyke",
+     "given": "Peter L."
+    },
+    {
+     "family": "Escorcia",
+     "given": "Freddy E."
+    }
+   ]
+  },
+  {
+   "key": "Nicolas2018",
+   "doi": "10.1371/journal.pone.0195802",
+   "journal": "PLoS ONE",
+   "year": 2018,
+   "volume": "13",
+   "page": "e0195802",
+   "title": "The somatostatin receptor 2 antagonist 64Cu-NODAGA-JR11 outperforms 64Cu-DOTA-TATE in a mouse xenograft model",
+   "authors": [
+    {
+     "family": "Rylova",
+     "given": "Svetlana N."
+    },
+    {
+     "family": "Stoykow",
+     "given": "Christian"
+    },
+    {
+     "family": "Del Pozzo",
+     "given": "Luigi"
+    },
+    {
+     "family": "Abiraj",
+     "given": "Keelara"
+    },
+    {
+     "family": "Tamma",
+     "given": "Maria Luisa"
+    },
+    {
+     "family": "Kiefer",
+     "given": "Yvonne"
+    },
+    {
+     "family": "Fani",
+     "given": "Melpomeni"
+    },
+    {
+     "family": "Maecke",
+     "given": "Helmut R."
+    }
+   ]
+  },
+  {
+   "key": "Fani2021",
+   "doi": "10.3390/ph14121265",
+   "journal": "Pharmaceuticals",
+   "year": 2021,
+   "volume": "14",
+   "page": "1265",
+   "title": "Distinct In Vitro Binding Profile of the Somatostatin Receptor Subtype 2 Antagonist [177Lu]Lu-OPS201 Compared to the Agonist [177Lu]Lu-DOTA-TATE",
+   "authors": [
+    {
+     "family": "Mansi",
+     "given": "Rosalba"
+    },
+    {
+     "family": "Plas",
+     "given": "Pascale"
+    },
+    {
+     "family": "Vauquelin",
+     "given": "Georges"
+    },
+    {
+     "family": "Fani",
+     "given": "Melpomeni"
+    }
+   ]
+  },
+  {
+   "key": "Maina2018",
+   "doi": "10.1186/s13550-018-0428-y",
+   "journal": "EJNMMI Res",
+   "year": 2018,
+   "volume": "8",
+   "page": "75",
+   "title": "The tetraamine chelator outperforms HYNIC in a new technetium-99m-labelled somatostatin receptor 2 antagonist",
+   "authors": [
+    {
+     "family": "Abiraj",
+     "given": "Keelara"
+    },
+    {
+     "family": "Ursillo",
+     "given": "Samer"
+    },
+    {
+     "family": "Tamma",
+     "given": "Maria Luisa"
+    },
+    {
+     "family": "Rylova",
+     "given": "Svetlana N."
+    },
+    {
+     "family": "Waser",
+     "given": "Beatrice"
+    },
+    {
+     "family": "Constable",
+     "given": "Edwin C."
+    },
+    {
+     "family": "Fani",
+     "given": "Melpomeni"
+    },
+    {
+     "family": "Nicolas",
+     "given": "Guillaume P."
+    },
+    {
+     "family": "Reubi",
+     "given": "Jean Claude"
+    },
+    {
+     "family": "Maecke",
+     "given": "Helmut R."
+    }
+   ]
+  },
+  {
+   "key": "Rinne2019b",
+   "doi": "10.1016/j.ejpb.2019.05.008",
+   "journal": "European Journal of Pharmaceutics and Biopharmaceutics",
+   "year": 2019,
+   "volume": "140",
+   "page": "109-120",
+   "title": "Selection of the optimal macrocyclic chelators for labeling with 111In and 68Ga improves contrast of HER2 imaging using engineered scaffold protein ADAPT6",
+   "authors": [
+    {
+     "family": "von Witting",
+     "given": "Emma"
+    },
+    {
+     "family": "Garousi",
+     "given": "Javad"
+    },
+    {
+     "family": "Lindbo",
+     "given": "Sarah"
+    },
+    {
+     "family": "Vorobyeva",
+     "given": "Anzhelika"
+    },
+    {
+     "family": "Altai",
+     "given": "Mohamed"
+    },
+    {
+     "family": "Oroujeni",
+     "given": "Maryam"
+    },
+    {
+     "family": "Mitran",
+     "given": "Bogdan"
+    },
+    {
+     "family": "Orlova",
+     "given": "Anna"
+    },
+    {
+     "family": "Hober",
+     "given": "Sophia"
+    },
+    {
+     "family": "Tolmachev",
+     "given": "Vladimir"
+    }
+   ]
+  },
+  {
+   "key": "Oroujeni2025",
+   "doi": "10.1186/s41181-025-00347-6",
+   "journal": "EJNMMI radiopharm. chem.",
+   "year": 2025,
+   "volume": "10",
+   "page": "26",
+   "title": "Selection of the optimal chelator for labeling of DARPin Ec1 with gallium-68 for PET imaging of EpCAM expression",
+   "authors": [
+    {
+     "family": "Vorobyeva",
+     "given": "Anzhelika"
+    },
+    {
+     "family": "Din",
+     "given": "Moeen-ud"
+    },
+    {
+     "family": "Schulga",
+     "given": "Alexey"
+    },
+    {
+     "family": "Konovalova",
+     "given": "Elena"
+    },
+    {
+     "family": "Abouzayed",
+     "given": "Ayman"
+    },
+    {
+     "family": "Bragina",
+     "given": "Olga"
+    },
+    {
+     "family": "Li",
+     "given": "Ruonan"
+    },
+    {
+     "family": "Gräslund",
+     "given": "Torbjörn"
+    },
+    {
+     "family": "Deyev",
+     "given": "Sergey M."
+    },
+    {
+     "family": "Oroujeni",
+     "given": "Maryam"
+    }
+   ]
+  },
+  {
+   "key": "Krasniqi2024",
+   "doi": "10.1186/s41181-024-00243-5",
+   "journal": "EJNMMI radiopharm. chem.",
+   "year": 2024,
+   "volume": "9",
+   "page": "14",
+   "title": "Chelator impact: investigating the pharmacokinetic behavior of copper-64 labeled PD-L1 radioligands",
+   "authors": [
+    {
+     "family": "Krutzek",
+     "given": "Fabian"
+    },
+    {
+     "family": "Donat",
+     "given": "Cornelius K."
+    },
+    {
+     "family": "Stadlbauer",
+     "given": "Sven"
+    }
+   ]
+  },
+  {
+   "key": "Osl2020",
+   "doi": "10.1021/acs.molpharmaceut.9b00808",
+   "journal": "Mol. Pharmaceutics",
+   "year": 2019,
+   "volume": "16",
+   "page": "4688-4695",
+   "title": "[<sup>68</sup>Ga]Ga/[<sup>177</sup>Lu]Lu-BL01, a Novel Theranostic Pair for Targeting C-X-C Chemokine Receptor 4",
+   "authors": [
+    {
+     "family": "Lau",
+     "given": "Joseph"
+    },
+    {
+     "family": "Kwon",
+     "given": "Daniel"
+    },
+    {
+     "family": "Rousseau",
+     "given": "Etienne"
+    },
+    {
+     "family": "Zhang",
+     "given": "Zhengxing"
+    },
+    {
+     "family": "Zeisler",
+     "given": "Jutta"
+    },
+    {
+     "family": "Uribe",
+     "given": "Carlos F."
+    },
+    {
+     "family": "Kuo",
+     "given": "Hsiou-Ting"
+    },
+    {
+     "family": "Zhang",
+     "given": "Chengcheng"
+    },
+    {
+     "family": "Lin",
+     "given": "Kuo-Shyan"
+    },
+    {
+     "family": "Bénard",
+     "given": "François"
+    }
+   ]
+  },
+  {
+   "key": "Greifenstein2021",
+   "doi": "10.1021/acs.bioconjchem.1c00305",
+   "journal": "Bioconjugate Chem.",
+   "year": 2021,
+   "volume": "32",
+   "page": "1223-1231",
+   "title": "Squaric Acid-Based Radiopharmaceuticals for Tumor Imaging and Therapy",
+   "authors": [
+    {
+     "family": "Grus",
+     "given": "Tilmann"
+    },
+    {
+     "family": "Lahnif",
+     "given": "Hanane"
+    },
+    {
+     "family": "Klasen",
+     "given": "Benedikt"
+    },
+    {
+     "family": "Moon",
+     "given": "Euy-Sung"
+    },
+    {
+     "family": "Greifenstein",
+     "given": "Lukas"
+    },
+    {
+     "family": "Roesch",
+     "given": "Frank"
+    }
+   ]
+  },
+  {
+   "key": "Ehlert2021ALPB",
+   "doi": "10.1021/acs.jctc.1c00471",
+   "journal": "J. Chem. Theory Comput.",
+   "year": 2021,
+   "volume": "17",
+   "page": "4250-4261",
+   "title": "Robust and Efficient Implicit Solvation Model for Fast Semiempirical Methods",
+   "authors": [
+    {
+     "family": "Ehlert",
+     "given": "Sebastian"
+    },
+    {
+     "family": "Stahn",
+     "given": "Marcel"
+    },
+    {
+     "family": "Spicher",
+     "given": "Sebastian"
+    },
+    {
+     "family": "Grimme",
+     "given": "Stefan"
+    }
+   ]
+  },
+  {
+   "key": "Pracht2024CREST",
+   "doi": "10.1063/5.0197592",
+   "journal": "The Journal of Chemical Physics",
+   "year": 2024,
+   "volume": "160",
+   "page": "114110",
+   "title": "CREST—A program for the exploration of low-energy molecular chemical space",
+   "authors": [
+    {
+     "family": "Pracht",
+     "given": "Philipp"
+    },
+    {
+     "family": "Grimme",
+     "given": "Stefan"
+    },
+    {
+     "family": "Bannwarth",
+     "given": "Christoph"
+    },
+    {
+     "family": "Bohle",
+     "given": "Fabian"
+    },
+    {
+     "family": "Ehlert",
+     "given": "Sebastian"
+    },
+    {
+     "family": "Feldmann",
+     "given": "Gereon"
+    },
+    {
+     "family": "Gorges",
+     "given": "Johannes"
+    },
+    {
+     "family": "Müller",
+     "given": "Marcel"
+    },
+    {
+     "family": "Neudecker",
+     "given": "Tim"
+    },
+    {
+     "family": "Plett",
+     "given": "Christoph"
+    },
+    {
+     "family": "Spicher",
+     "given": "Sebastian"
+    },
+    {
+     "family": "Steinbach",
+     "given": "Pit"
+    },
+    {
+     "family": "Wesołowski",
+     "given": "Patryk A."
+    },
+    {
+     "family": "Zeller",
+     "given": "Felix"
+    }
+   ]
+  },
+  {
+   "key": "Bannwarth2019",
+   "doi": "10.1021/acs.jctc.8b01176",
+   "journal": "Journal of Chemical Theory and Computation",
+   "year": 2019,
+   "volume": "15",
+   "page": "1652-1671",
+   "title": "GFN2-xTB─An Accurate and Broadly Parametrized\nSelf-Consistent Tight-Binding Quantum Chemical Method with Multipole\nElectrostatics and Density-Dependent Dispersion Contributions",
+   "authors": [
+    {
+     "family": "Bannwarth",
+     "given": "Christoph"
+    },
+    {
+     "family": "Ehlert",
+     "given": "Sebastian"
+    },
+    {
+     "family": "Grimme",
+     "given": "Stefan"
+    }
+   ]
+  },
+  {
+   "key": "Bannwarth2020",
+   "doi": "10.1002/wcms.1493",
+   "journal": "WIREs Comput Mol Sci",
+   "year": 2020,
+   "volume": "11",
+   "page": "e1493",
+   "title": "Extended\n                    <scp>tight‐binding</scp>\n                    quantum chemistry methods",
+   "authors": [
+    {
+     "family": "Bannwarth",
+     "given": "Christoph"
+    },
+    {
+     "family": "Caldeweyher",
+     "given": "Eike"
+    },
+    {
+     "family": "Ehlert",
+     "given": "Sebastian"
+    },
+    {
+     "family": "Hansen",
+     "given": "Andreas"
+    },
+    {
+     "family": "Pracht",
+     "given": "Philipp"
+    },
+    {
+     "family": "Seibert",
+     "given": "Jakob"
+    },
+    {
+     "family": "Spicher",
+     "given": "Sebastian"
+    },
+    {
+     "family": "Grimme",
+     "given": "Stefan"
+    }
+   ]
+  },
+  {
+   "key": "Schuh2026Audit",
+   "doi": "10.1039/d6sc01799a",
+   "journal": "Chem. Sci.",
+   "year": 2026,
+   "volume": "17",
+   "page": "17455-17467",
+   "title": "Auditing widely used biomolecular benchmarks reveals systematic data inconsistencies",
+   "authors": [
+    {
+     "family": "Schuh",
+     "given": "Maximilian G."
+    },
+    {
+     "family": "Daniluk",
+     "given": "Aleksandra"
+    },
+    {
+     "family": "Sieber",
+     "given": "Stephan A."
+    }
+   ]
+  },
+  {
+   "key": "Tropsha2025Eval",
+   "doi": "10.1021/acs.jcim.5c00475",
+   "journal": "J. Chem. Inf. Model.",
+   "year": 2025,
+   "volume": "65",
+   "page": "9871-9891",
+   "title": "Evaluating Machine Learning Models for Molecular Property Prediction: Performance and Robustness on Out-of-Distribution Data",
+   "authors": [
+    {
+     "family": "Fooladi",
+     "given": "Hosein"
+    },
+    {
+     "family": "Vu",
+     "given": "Thi Ngoc Lan"
+    },
+    {
+     "family": "Mathea",
+     "given": "Miriam"
+    },
+    {
+     "family": "Kirchmair",
+     "given": "Johannes"
+    }
+   ]
+  },
+  {
+   "key": "Boldini2025UMAP",
+   "doi": "10.1186/s13321-025-01039-8",
+   "journal": "J Cheminform",
+   "year": 2025,
+   "volume": "17",
+   "page": "94",
+   "title": "UMAP-based clustering split for rigorous evaluation of AI models for virtual screening on cancer cell lines*",
+   "authors": [
+    {
+     "family": "Guo",
+     "given": "Qianrong"
+    },
+    {
+     "family": "Hernandez-Hernandez",
+     "given": "Saiveth"
+    },
+    {
+     "family": "Ballester",
+     "given": "Pedro J."
+    }
+   ]
+  },
+  {
+   "key": "McGreivy2024Weak",
+   "doi": "10.1038/s42256-024-00897-5",
+   "journal": "Nat Mach Intell",
+   "year": 2024,
+   "volume": "6",
+   "page": "1256-1269",
+   "title": "Weak baselines and reporting biases lead to overoptimism in machine learning for fluid-related partial differential equations",
+   "authors": [
+    {
+     "family": "McGreivy",
+     "given": "Nick"
+    },
+    {
+     "family": "Hakim",
+     "given": "Ammar"
+    }
+   ]
+  },
+  {
+   "key": "Spang2023GaChelators",
+   "doi": "10.3390/molecules28010203",
+   "journal": "Molecules",
+   "year": 2022,
+   "volume": "28",
+   "page": "203",
+   "title": "Modern Developments in Bifunctional Chelator Design for Gallium Radiopharmaceuticals",
+   "authors": [
+    {
+     "family": "Davey",
+     "given": "Patrick R. W. J."
+    },
+    {
+     "family": "Paterson",
+     "given": "Brett M."
+    }
+   ]
+  },
+  {
+   "key": "Sinnes2020b",
+   "doi": "10.1186/s41181-020-00115-8",
+   "journal": "EJNMMI radiopharm. chem.",
+   "year": 2020,
+   "volume": "5",
+   "page": "29",
+   "title": "Effect of the versatile bifunctional chelator AAZTA5 on the radiometal labelling properties and the in vitro performance of a gastrin releasing peptide receptor antagonist",
+   "authors": [
+    {
+     "family": "Hofstetter",
+     "given": "Michael"
+    },
+    {
+     "family": "Moon",
+     "given": "Euy Sung"
+    },
+    {
+     "family": "D’Angelo",
+     "given": "Fabio"
+    },
+    {
+     "family": "Geissbühler",
+     "given": "Lucien"
+    },
+    {
+     "family": "Alberts",
+     "given": "Ian"
+    },
+    {
+     "family": "Afshar-Oromieh",
+     "given": "Ali"
+    },
+    {
+     "family": "Rösch",
+     "given": "Frank"
+    },
+    {
+     "family": "Rominger",
+     "given": "Axel"
+    },
+    {
+     "family": "Gourni",
+     "given": "Eleni"
+    }
+   ]
+  },
+  {
+   "key": "Deberle2025Th227",
+   "doi": "10.1021/acs.jmedchem.4c02423",
+   "journal": "J. Med. Chem.",
+   "year": 2025,
+   "volume": "68",
+   "page": "1682-1692",
+   "title": "Synthesis and Evaluation of a Bifunctional Chelator for Thorium-227 Targeted Radiotherapy",
+   "authors": [
+    {
+     "family": "Woods",
+     "given": "Joshua J."
+    },
+    {
+     "family": "Rigby",
+     "given": "Alex"
+    },
+    {
+     "family": "Wacker",
+     "given": "Jennifer N."
+    },
+    {
+     "family": "Arino",
+     "given": "Trevor"
+    },
+    {
+     "family": "Alvarenga Vasquez",
+     "given": "Jennifer V."
+    },
+    {
+     "family": "Cosby",
+     "given": "Alexia"
+    },
+    {
+     "family": "Martin",
+     "given": "Kirsten E."
+    },
+    {
+     "family": "Abergel",
+     "given": "Rebecca J."
+    }
+   ]
+  },
+  {
+   "key": "Hennrich2026TAT",
+   "doi": "10.1016/j.tips.2026.01.001",
+   "journal": "Trends in Pharmacological Sciences",
+   "year": 2026,
+   "volume": "47",
+   "page": "263-275",
+   "title": "Targeted alpha therapy (r)evolution: emerging nuclides for clinical applications",
+   "authors": [
+    {
+     "family": "Pedersen",
+     "given": "Nadia B."
+    },
+    {
+     "family": "Straathof",
+     "given": "Natan J.W."
+    },
+    {
+     "family": "Elvas",
+     "given": "Filipe"
+    },
+    {
+     "family": "Herth",
+     "given": "Matthias M."
+    },
+    {
+     "family": "Battisti",
+     "given": "Umberto Maria"
+    }
+   ]
+  },
+  {
+   "key": "Rudd2025ChemSci",
+   "doi": "10.1039/d4sc06969b",
+   "journal": "Chem. Sci.",
+   "year": 2025,
+   "volume": "16",
+   "page": "3998-4005",
+   "title": "Potential theranostics of breast cancer with copper-64/67 sarcophagine-trastuzumab",
+   "authors": [
+    {
+     "family": "Rudd",
+     "given": "Stacey E."
+    },
+    {
+     "family": "Van Zuylekom",
+     "given": "Jessica"
+    },
+    {
+     "family": "Cullinane",
+     "given": "Carleen"
+    },
+    {
+     "family": "Blyth",
+     "given": "Benjamin J."
+    },
+    {
+     "family": "Donnelly",
+     "given": "Paul S."
+    }
+   ]
+  },
+  {
+   "key": "Zhu2024SSTRanta",
+   "doi": "10.1007/s00259-024-06639-4",
+   "journal": "Eur J Nucl Med Mol Imaging",
+   "year": 2024,
+   "volume": "51",
+   "page": "2002-2011",
+   "title": "Gallium-68 labeled somatostatin receptor antagonist PET/CT in over 500 patients with neuroendocrine neoplasms: experience from a single center in China",
+   "authors": [
+    {
+     "family": "Liu",
+     "given": "Meixi"
+    },
+    {
+     "family": "Cheng",
+     "given": "Yuejuan"
+    },
+    {
+     "family": "Bai",
+     "given": "Chunmei"
+    },
+    {
+     "family": "Zhao",
+     "given": "Hong"
+    },
+    {
+     "family": "Jia",
+     "given": "Ru"
+    },
+    {
+     "family": "Chen",
+     "given": "Jingci"
+    },
+    {
+     "family": "Zhu",
+     "given": "Wenjia"
+    },
+    {
+     "family": "Huo",
+     "given": "Li"
+    }
+   ]
+  },
+  {
+   "key": "Mcneil2023Pb",
+   "doi": "10.1007/s00259-023-06494-9",
+   "journal": "Eur J Nucl Med Mol Imaging",
+   "year": 2023,
+   "volume": "51",
+   "page": "1147-1162",
+   "title": "Structural modifications toward improved lead-203/lead-212 peptide-based image-guided alpha-particle radiopharmaceutical therapies for neuroendocrine tumors",
+   "authors": [
+    {
+     "family": "Lee",
+     "given": "Dongyoul"
+    },
+    {
+     "family": "Li",
+     "given": "Mengshi"
+    },
+    {
+     "family": "Liu",
+     "given": "Dijie"
+    },
+    {
+     "family": "Baumhover",
+     "given": "Nicholas J."
+    },
+    {
+     "family": "Sagastume",
+     "given": "Edwin A."
+    },
+    {
+     "family": "Marks",
+     "given": "Brenna M."
+    },
+    {
+     "family": "Rastogi",
+     "given": "Prerna"
+    },
+    {
+     "family": "Pigge",
+     "given": "F. Christopher"
+    },
+    {
+     "family": "Menda",
+     "given": "Yusuf"
+    },
+    {
+     "family": "Johnson",
+     "given": "Frances L."
+    },
+    {
+     "family": "Schultz",
+     "given": "Michael K."
+    }
+   ]
+  },
+  {
+   "key": "Zhang2024JR11",
+   "doi": "10.1007/s00259-024-06978-2",
+   "journal": "Eur J Nucl Med Mol Imaging",
+   "year": 2024,
+   "volume": "52",
+   "page": "1189-1199",
+   "title": "Synthesis and preclinical evaluation of [18F]AlF-NOTA-Asp2-PEG2-JR11 as a novel antagonist radioligand for PET imaging of somatostatin receptor",
+   "authors": [
+    {
+     "family": "Liang",
+     "given": "Haoran"
+    },
+    {
+     "family": "Chen",
+     "given": "Zihao"
+    },
+    {
+     "family": "Mo",
+     "given": "Chunwei"
+    },
+    {
+     "family": "Han",
+     "given": "Yanjiang"
+    },
+    {
+     "family": "Liu",
+     "given": "Qingxing"
+    },
+    {
+     "family": "Tang",
+     "given": "Ganghua"
+    }
+   ]
+  }
+ ],
+ "bad": [
+  [
+   "Kapoor2023REFORMS",
+   "10.48550/arXiv.2308.07832"
+  ]
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "gas_complexation": {
+  "insample_r2": 0.06975871964329394,
+  "lopo_r2": -0.22708147118678612,
+  "energy_vs_charge_r": -0.6882159368190692,
+  "n": 82
+ },
+ "gas_exchange": {
+  "insample_r2": 0.08619452932424221,
+  "lopo_r2": -0.27954204230955226,
+  "energy_vs_charge_r": 0.43435310140328354,
+  "n": 82
+ },
+ "solv_complexation": {
+  "insample_r2": 0.12933934169127714,
+  "lopo_r2": -0.3284301498231008,
+  "energy_vs_charge_r": -0.6655293296541459,
+  "n": 82
+ },
+ "solv_exchange": {
+  "insample_r2": 0.13897479311615402,
+  "lopo_r2": -0.3402182326505303,
+  "energy_vs_charge_r": 0.43435310140328354,
+  "n": 82
+ }
+}
