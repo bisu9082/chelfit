@@ -1,0 +1,250 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[version=3]{mhchem}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,longtable,array}
+\usepackage{caption}
+\usepackage[colorlinks=true,allcolors=blue,breaklinks=true]{hyperref}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{titlesec}
+
+\captionsetup{font=small,labelfont=bf,justification=justified,singlelinecheck=false}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.6em}{}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{3em}
+\hyphenation{che-la-tor che-late ra-dio-me-tal con-ju-gate trans-fer-able}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Electronic Supplementary Information}\\[8pt]
+{\large A metal chelate's effect on molecular recognition\\is not a property of the chelate}\\[10pt]
+{Jeongyun Kim,$^{a,\ddag}$ Jin Yoo,$^{a,\ddag}$ Ku Kang$^{a,\ast}$ and Dongyoul Lee$^{b,\ast}$}\\[6pt]
+{\footnotesize $^{a}$ CBRN Defense Research Institute, Ministry of National Defense, Seoul 06796, Republic of Korea.\\
+$^{b}$ Korea Military Academy, Seoul 01805, Republic of Korea.\\
+$^{\ddag}$ These authors contributed equally.}
+\end{center}
+
+\vspace{6pt}
+\hrule
+\vspace{10pt}
+
+\noindent
+All data, optimised Cartesian geometries and analysis code underlying this work are archived at
+\mbox{\texttt{10.5281/zenodo.24211564}} under CC-BY-4.0, with development history at
+\url{https://github.com/bisu9082/chelfit}. Every number and figure in the article and in this
+document is produced by running the deposited pipeline; none was transcribed by hand from an
+earlier run.
+
+\tableofcontents
+
+%%====================================================================
+\section{Why the complexation energy had to be replaced}
+%%====================================================================
+
+Our first quantum-chemical descriptor set used a complexation energy referenced to the bare metal
+ion, $\Delta E = E(\mathrm{ML}) - E(\mathrm{M}) - E(\mathrm{L})$. This quantity is dominated by the
+Coulombic cost of neutralising a bare \ce{M^{n+}} ion rather than by any chemistry that
+distinguishes one chelator from another. Computed that way the energies span
+$-691$ to $-2257$\,kcal\,mol$^{-1}$ and correlate with the \emph{metal's} formal charge at
+$r = -0.914$ (Fig.~\ref{fig:S1}a). Implicit solvation shrinks the magnitudes but does not repair
+the defect ($r = -0.884$): the descriptor remains, to a good approximation, a restatement of the
+metal's oxidation state.
+
+We therefore replaced it with a ligand-exchange energy referenced to DOTA at the same metal,
+\begin{equation}
+\Delta\Delta E(\mathrm{L};\mathrm{M}) =
+\bigl[E(\mathrm{ML}) - E(\mathrm{L})\bigr] - \bigl[E(\mathrm{M}\cdot\mathrm{DOTA}) - E(\mathrm{DOTA})\bigr],
+\end{equation}
+in which the bare-ion term cancels exactly. The resulting quantity spans
+$-35.7$ to $+20.6$\,kcal\,mol$^{-1}$ and its correlation with metal charge falls to
+$r = -0.199$ ($p = 0.320$, $n = 27$; Fig.~\ref{fig:S1}b). It also orders chemically: NOTA is
+destabilised relative to DOTA for every metal and DOTAGA stabilised, with the larger ions favouring
+the more donor-rich chelators.
+
+We record this because the conclusion of the article does not depend on it, but its credibility
+does. A reader is entitled to ask whether a null result reflects a defective descriptor; the answer
+is that we found one defective descriptor, repaired it, and the null result became stronger rather
+than weaker (Section~\ref{sec:ladder}).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{FigS1.png}
+\caption{\textbf{The charge artefact and its removal.} (\textbf{a})~Complexation energies referenced
+to the bare metal ion, for all 27 metal-bearing complexes, against the formal charge of the metal.
+The energies track the oxidation state in both the gas phase and under ALPB solvation.
+(\textbf{b})~The same complexes under the ligand-exchange energy referenced to DOTA; the charge
+dependence is gone and the remaining spread is chelator chemistry.}
+\label{fig:S1}
+\end{figure}
+
+%%====================================================================
+\section{Improving the physics widens the generalisation gap}
+\label{sec:ladder}
+%%====================================================================
+
+Two independent improvements were made to the quantum-chemical arm: replacing the complexation
+energy with the exchange energy, and replacing the gas-phase treatment with ALPB implicit solvation
+in water. Because they are separable we evaluated all four combinations on the same 82 observations
+(Fig.~\ref{fig:S2}, and Table~2 of the article).
+
+Every step that makes the chemistry more defensible raises the in-sample fit and lowers the
+held-out performance, on both axes independently and in every ordering. We read this as the
+signature of a descriptor set that is resolving the dataset rather than the effect: better physics
+gives the model more to fit locally and nothing more to carry across target families. It is the
+reason we do not present the in-sample numbers as partial success.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{FigS2.png}
+\caption{\textbf{In-sample fit and held-out performance move in opposite directions.} Each point is
+one of the four combinations of energy term and phase, fitted on the same 82 observations with the
+same ridge pipeline. Leave-one-target-family-out validation throughout.}
+\label{fig:S2}
+\end{figure}
+
+%%====================================================================
+\section{What size of transferable effect the design could have caught}
+%%====================================================================
+
+A null result is only informative with a stated detection floor. We injected a synthetic effect that
+is by construction a linear function of the descriptors---hence perfectly transferable, the most
+favourable case a linear model could face---at a range of magnitudes, using 200 random descriptor
+directions per magnitude, and recorded how often leave-one-target-family-out $R^2$ exceeded zero
+(Fig.~\ref{fig:S3}).
+
+The design detects a transferable twofold effect about three times in four, reaches 80\,\% only near
+fourfold, and has essentially no power below roughly 1.4-fold. Because the injected effect was
+linear in the descriptors, that floor is optimistic: a transferable effect with any non-linear
+structure would need to be larger still. The effects actually present in the data have a median
+magnitude of 1.50-fold within matched sets and reach 5.5-fold, so effects of the relevant size exist
+here---they are simply not transferable.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{FigS3.png}
+\caption{\textbf{Injection power curve.} Detection rate against the magnitude of an injected
+transferable effect, 200 random descriptor directions per magnitude. Dashed line, 80\,\% detection.
+Dotted line, the median maximum/minimum affinity ratio actually observed within a matched set.}
+\label{fig:S3}
+\end{figure}
+
+%%====================================================================
+\section{Transfer under every grouping, both descriptor arms}
+%%====================================================================
+
+Leave-one-target-family-out is the validation the article reports, because target family is the
+grouping a practitioner actually crosses when moving to a new construct. It is not the only
+grouping that matters, and transfer fails under all of them (Fig.~\ref{fig:S4}).
+
+The classical descriptors on the full 95 observations give $R^2 = -0.020$ for a held-out chelator,
+$-0.088$ for a held-out vector, $-0.086$ for a held-out paper, $-0.177$ for a held-out target family
+and $-0.187$ for a held-out metal. Adding the quantum-chemical descriptors on the 82 rows that carry
+them makes every level worse. The held-out-chelator result for the combined arm ($-0.935$) is the
+most extreme because only five chelators carry quantum-chemical coverage, so each fold removes a
+large fraction of the descriptor range; we report it for completeness rather than as a separate
+finding.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{FigS4.png}
+\caption{\textbf{No grouping of the data leaves a positive result.} Cross-validated $R^2$ under five
+held-out grouping schemes, for the classical descriptors on the full dataset and for the combined
+classical and quantum-chemical descriptors on the subset carrying quantum-chemical coverage.}
+\label{fig:S4}
+\end{figure}
+
+\clearpage
+%%====================================================================
+\section{Complete matched affinity dataset}
+%%====================================================================
+
+Table~\ref{tab:S1} lists all 106 transcribed affinity values with their source DOIs. Ninety-five of
+these fall in 32 matched sets---one paper, one vector, one metal, one endpoint, with the chelator
+varying---and are the analysis population; the remainder are singletons retained for provenance.
+Values that a source reproduced from earlier work were identified by their footnotes and excluded as
+duplicates: three pentixafor studies share one underlying dataset.
+
+\input{tabS1.tex}
+
+\clearpage
+%%====================================================================
+\section{Optimised complexes and coordination verification}
+%%====================================================================
+
+Table~\ref{tab:S2} lists all 32 metal--chelate combinations, of which 27 carry a metal. Coordination
+mode was verified against the mode known for each chelator rather than assumed: Ga--DOTA as
+N$_4$O$_3$ with Ga--O 1.84--1.94\,\AA{} and Ga--N 2.26--2.54\,\AA, Ga--NODAGA as N$_3$O$_3$,
+Lu--DOTA as N$_4$O$_4$, and so on. All 27 passed. Five starting structures were used per complex
+(four fresh conformer seeds plus a re-relaxation of a gas-phase optimum) and the lowest-energy
+structure \emph{with a chemically valid coordination mode} was kept---not the lowest-energy
+structure outright. Five complexes (Lu--DOTA, Lu--DOTAGA, Y--DOTAGA, Cu--DTPA, Lu--DTPA) initially
+failed this check and were re-run with a twelve-seed sweep rather than by relaxing the criterion.
+
+Solvation changed the structures materially: four of 27 coordination numbers shifted, the mean M--N
+distance contracted by 0.10\,\AA, and the mean dipole moment rose from 16.0 to 25.9\,D. Cartesian
+coordinates for every complex, gas-phase and solvated, are in the deposited archive.
+
+\input{tabS2.tex}
+
+\clearpage
+%%====================================================================
+\section{Lipophilicity as a confounder}
+%%====================================================================
+
+A chelator swap changes lipophilicity as well as sterics and charge, so a referee is right to ask
+whether the affinity shifts are a lipophilicity effect in disguise. Every log$D_{7.4}$ or log$P$
+value reported alongside the affinity data in the same tables was transcribed (Table~\ref{tab:S3};
+38 values from four of the ten studies). Across the 29 within-set pairs for which both quantities
+are available, the difference in lipophilicity explains 7.4\,\% of the difference in affinity and
+the association is not significant ($r = +0.272$, $p = 0.153$, bootstrap 95\,\% CI
+$[-0.146, +0.580]$). The absolute values are uncorrelated ($r = -0.040$, $p = 0.838$).
+
+This does not establish that lipophilicity is irrelevant to conjugate design; it establishes that it
+does not account for the effect audited here, on the subset of the data where it can be tested.
+
+\input{tabS3.tex}
+
+\clearpage
+%%====================================================================
+\section{Software, reproducibility and deposited files}
+%%====================================================================
+
+Calculations used GFN2-xTB through \textsf{tblite} with the ASE interface, with ALPB implicit
+solvation in water, at the correct total charge and spin multiplicity for each complex. Structures
+were built from SMILES with RDKit; metals were threaded into the macrocyclic cavity using explicit
+dative bonds to the ring nitrogens and carboxylate oxygens \emph{before} 3-D embedding, because
+embedding first allows the ion to escape the cavity. Statistical analysis used scikit-learn,
+SciPy, NumPy and pandas. Exact versions are pinned in \texttt{requirements.txt} in the archive.
+
+Confidence intervals come from 10\,000 bootstrap resamples. The within-set label-permutation null
+uses 2000 permutations. Random seeds are fixed in every script; the pairwise analyses and the
+permutation test each state their seed in the file they write.
+
+The archive contains the raw affinity table with per-row DOI provenance, the derived analysis table,
+the classical and quantum-chemical descriptor tables, the ligand-exchange energies, the optimised
+Cartesian geometries of all 32 complexes in both the gas phase and solvated, the screened candidate
+pool, the lipophilicity table, and the complete analysis pipeline. Running the pipeline from the
+deposited files reproduces every number and figure in the article and in this document.
+
+%%====================================================================
+\section*{References}
+%%====================================================================
+
+\begin{enumerate}\setlength{\itemsep}{2pt}
+\item C.~Bannwarth, S.~Ehlert and S.~Grimme, \textit{J. Chem. Theory Comput.}, 2019, \textbf{15}, 1652--1671.
+\item C.~Bannwarth, E.~Caldeweyher, S.~Ehlert, A.~Hansen, P.~Pracht, J.~Seibert, S.~Spicher and S.~Grimme, \textit{WIREs Comput. Mol. Sci.}, 2021, \textbf{11}, e1493.
+\item S.~Ehlert, M.~St{\"a}hn, S.~Spicher and S.~Grimme, \textit{J. Chem. Theory Comput.}, 2021, \textbf{17}, 4250--4261.
+\item P.~Pracht, S.~Grimme, C.~Bannwarth, F.~Bohle, S.~Ehlert, G.~Feldmann, J.~Gorges, M.~M{\"u}ller, T.~Neudecker, C.~Plett, S.~Spicher, P.~Steinbach, P.~A.~Wesołowski and F.~Zeller, \textit{J. Chem. Phys.}, 2024, \textbf{160}, 114110.
+\item E.~W.~Price and C.~Orvig, \textit{Chem. Soc. Rev.}, 2014, \textbf{43}, 260--290.
+\end{enumerate}
+
+\end{document}
